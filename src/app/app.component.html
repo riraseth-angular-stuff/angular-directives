@@ -26,7 +26,9 @@
         </div>
       </ul>
       <p appBasicHighlight>Styled with a basic directive</p>
-      <p appBetterHighlight>Styled with a better directive</p>
+<!--      <p appBetterHighlight [defaultColor]="'yellow'" highLightColor="red">Styled with a better directive</p>-->
+      <p [appBetterHighlight]="'red'" [defaultColor]="'yellow'">Styled with a better directive</p>
+<!--      in brackets when alias == directive selector -->
     </div>
   </div>
 </div>
